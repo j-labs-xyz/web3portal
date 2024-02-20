@@ -4,21 +4,27 @@ import TitleBar from "@/views/TitleBar";
 import { AirDropData, JsonObject } from "@/libs/types";
 import { AirdropItem } from "@/components/AirdropItem";
 import { Footer } from "@/views/Footer";
+import data from "../../public/data/data.json";
+import networks from "../../public/data/networks.json";
 
 async function getData() {
-  const res = await fetch("http://localhost:3000/data/data.json", {
-    cache: "no-cache"
-    // cache: "force-cache",
-    // next: { revalidate: 3600 }
-  });
+  // const res = await fetch("http://localhost:3000/data/data.json", {
+  //   cache: "no-cache"
+  //   // cache: "force-cache",
+  //   // next: { revalidate: 3600 }
+  // });
 
-  const networks = await fetch("http://localhost:3000/data/networks.json", {
-    cache: "no-cache"
-  });
+  // const networks = await fetch("http://localhost:3000/data/networks.json", {
+  //   cache: "no-cache"
+  // });
 
+  // return {
+  //   airdrops: await res.json(),
+  //   networks: await networks.json()
+  // };
   return {
-    airdrops: await res.json(),
-    networks: await networks.json()
+    airdrops: data,
+    networks: networks
   };
 }
 
