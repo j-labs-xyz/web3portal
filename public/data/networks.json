@@ -1,0 +1,13 @@
+{
+	"56": {
+		"name": "BNB Smart Chain",
+		"rpc": "https://bsc-dataseed1.defibit.io",
+		"logo": "/data/images/bnb.png",
+		"explorer": "https://bscscan.com",
+		"currency": {
+			"symbol": "BNB",
+			"decimals": 18,
+			"logo": "/images/bnb.png"
+		}
+	}
+}
