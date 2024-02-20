@@ -1,0 +1,15 @@
+.AirdropItemLayout {
+	border: 1px solid gainsboro;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	cursor: pointer;
+	gap: 1rem;
+	padding: 1rem;
+	transition: all 0.5s;
+}
+
+.AirdropItemLayout:hover {
+	background-color: #efefef;
+}
