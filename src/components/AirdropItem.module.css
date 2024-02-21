@@ -1,5 +1,12 @@
+.airdropItemContainer {
+	position: relative;
+	width: 365px;
+	height: 116px;
+}
+
 .AirdropItemLayout {
-	border: 1px solid gainsboro;
+	border: 3px solid black;
+	border-radius: 5px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -8,8 +15,24 @@
 	gap: 1rem;
 	padding: 1rem;
 	transition: all 0.5s;
+	box-shadow: 3px 3px 0 0 black;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .AirdropItemLayout:hover {
-	background-color: #efefef;
+	box-shadow: 1px 1px 0 0 black;
+	top: 2px;
+	left: 2px;
+}
+
+@media (max-width: 700px) {
+	.airdropItemContainer {
+		width: 100%;
+	}
+
+	.AirdropItemLayout{
+		width: calc(100% - 3rem);
+	}
 }
