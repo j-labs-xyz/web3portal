@@ -7,7 +7,7 @@ import React from "react";
 
 export const AirdropItem = ({ airdrop, networks }: {
 	airdrop: AirDropData;
-	networks: object
+	networks: object;
 }) => {
 	const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
 		e.preventDefault();

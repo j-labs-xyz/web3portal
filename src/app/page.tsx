@@ -31,7 +31,6 @@ async function getData() {
 
 export default async function Home() {
   const data = await getData();
-  appController.data = data;
 
   return (
     <main className="main">
