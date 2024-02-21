@@ -6,6 +6,7 @@ import { AirdropItem } from "@/components/AirdropItem";
 import { Footer } from "@/views/Footer";
 import data from "../../public/data/data.json";
 import networks from "../../public/data/networks.json";
+import { appController } from "@/libs/appController";
 
 async function getData() {
   // const res = await fetch("http://localhost:3000/data/data.json", {
@@ -30,12 +31,13 @@ async function getData() {
 
 export default async function Home() {
   const data = await getData();
+  appController.data = data;
 
   return (
-    <main className={styles.main}>
+    <main className="main">
       <TitleBar />
 
-      <div className={styles.mainView}>
+      <div className="mainView">
         <h2>Latest Airdrops</h2>
 
         {data?.airdrops?.length > 0 && <div className="grid-3-Columns">
