@@ -42,15 +42,20 @@ export const AirdropItem = ({ airdrop, networks }: {
 						src={(networks as JsonObject)[String(airdrop.platform)].logo} />
 				</div>
 
-				<div className="flex-row-align-left">
+				<div className="flex-row-align-left text-small">
 					<div>{new Date(airdrop.start).toLocaleDateString()}</div>
 					<div>-</div>
 					<div>{new Date(airdrop.end).toLocaleDateString()}</div>
 				</div>
 
-				<div className="flex-row-align-left">
-					<div className="label">amount:</div>
-					<div>{airdrop.amount}&nbsp;{airdrop.asset.symbol}(${airdrop.value})</div>
+				<div className="flex-row-align-left text-small">
+					<div>token:</div>
+					<div>{airdrop.amount}</div>
+				</div>
+
+				<div className="flex-row-align-left text-small">
+					<div>value:</div>
+					<div>${airdrop.value}</div>
 				</div>
 			</div>
 		</div>

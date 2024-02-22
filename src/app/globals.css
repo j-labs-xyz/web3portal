@@ -154,6 +154,11 @@ a {
   text-transform: capitalize;
 }
 
+.text-small {
+  font-size: 8pt;
+  text-transform: capitalize;
+}
+
 .sign {
   font-size: small;
   color: grey;
@@ -207,14 +212,13 @@ article {
 
 .textButton {
   text-transform: capitalize;
-  font-weight: bold;
   cursor: pointer;
   width: fit-content;
   background: transparent;
   outline: none;
   border: none;
   font-size: 1rem;
-  color: grey;
+  color: white;
   padding: 0;
   margin: 0;
 }
