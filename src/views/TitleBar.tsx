@@ -13,20 +13,22 @@ export default function TitleBar() {
 			href="/"
 			className="flex-row-align-center">
 			<Image
-				src="/images/logo.png"
+				src="/images/logo.webp"
 				alt="logo"
-				height={32}
-				width={32} />
-
-			<h1>Web3 Portal</h1>
+				height={50}
+				width={210} />
 		</Link>
 
 		<div className={styles.menu}>
 			<Link
 				className={pathname === "/" ? "menuItemActived" : "menuItem"}
-				href="/">airdrops</Link>
+				href="/">Airdrops</Link>
+		</div>
+	</div>
+};
 
-			<Link
+/*
+<Link
 				className="menuItem"
 				target="_blank"
 				href="https://www.prodigitalfund.com/portfolio">portfolio</Link>
@@ -50,6 +52,4 @@ export default function TitleBar() {
 				className="menuItem"
 				target="_blank"
 				href="https://www.prodigitalfund.com/contact">contact</Link>
-		</div>
-	</div>
-};
+*/
