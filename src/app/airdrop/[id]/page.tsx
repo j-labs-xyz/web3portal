@@ -15,7 +15,7 @@ export default async function Page({ params }: {
 		<TitleBar />
 
 		<div className="mainView">
-			<TextButton text="⇐ back" />
+			<TextButton text="< back" />
 
 			{airdrop && <>
 				<h2>{airdrop.title}</h2>

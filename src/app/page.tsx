@@ -13,8 +13,6 @@ export default async function Home() {
       <TitleBar />
 
       <div className="mainView">
-        <h2>Latest Airdrops</h2>
-
         {data?.airdrops?.length > 0 && <div className="grid-3-Columns">
           {data?.airdrops.map((item: JsonObject) => {
             return <AirdropItem

@@ -4,22 +4,12 @@ import { Wave } from "@/components/Wave";
 
 export const Footer = () => {
 	return <div className={styles.footerLayout}>
-		<div className="waveContainer">
-			<div className="waveBox">
-				<Wave />
-			</div>
-		</div>
-
-		<p>&nbsp;</p>
-
 		<div className="flex-row-align-left">
 			<Image
-				src="/images/logo.png"
+				src="/images/logo.webp"
 				alt="logo"
-				height={16}
-				width={16} />
-
-			<div className="sign">Web3 Portal</div>
+				height={30}
+				width={126} />
 		</div>
 	</div>
 };

@@ -1,35 +1,35 @@
 [
 	{
 		"id": 0,
-		"title": "Laika",
-		"logo": "/data/images/laika-logo.jpg",
+		"title": "Mode",
+		"logo": "/data/images/airdrops/mode-logo.jpg",
 		"start": "2024-02-15",
 		"end": "2024-03-15",
-		"amount": 20000,
-		"value": 20000,
+		"amount": 550000000,
+		"value": 550000000,
 		"platform": 56,
-		"description": "Laika is the first community driven Solana meme SuperVerse, where they unite people across different Metaverses, Chains and Protocols to launch Laika to The Moon in a 3 stage space mission. Laika is more than just a memecoin. Laika is a movement. Laika is proof that if users band together as a global community, they can achieve the impossible. Laika is airdropping a total of $20,000 worth of LAIKA tokens to users who do simple Zealy quests. Join Zealy, complete Laika quests to earn XP, and stand a chance to be among the top 500 participants wo win up to $2,000 worth of LAIKA each. Step-by-Step Guide: Visit the Laika Zealy airdrop page. Connect your wallet and sign up. Now, complete the quests to earn XPs. The top 500 participants on the leaderboard will get rewards as mentioned below: 1st place: $2,000 LAIKA 2nd place: $1,500 LAIKA 3rd place: $1,000 LAIKA 4th and 5th place: $750 LAIKA each 6th to 10th place: $300 LAIKA each 11th to 50th place: $125 LAIKA each 51st to 100th place: $50 LAIKA each 101st to 200th place: $20 LAIKA each 201st to 500th place: $10 LAIKA each",
-		"claimURL": "https://zealy.io/cw/laikathecosmodog/questboard",
+		"description": "Mode is an Ethereum layer-2 blockchain designed for hyper-growth. Mode is built using Optimism's OP Stack which enables rapid application development and deployment of EVM-compatible applications. The goal of Mode is to empower developers and users to grow an ecosystem of world-class applications and be directly rewarded for their contribution to the ecosystem through referral and contract-secured revenue.",
+		"claimURL": "https://app.mode.network/early/",
 		"asset": {
-			"symbol": "LAIKA",
-			"name": "Laika",
+			"symbol": "MODE",
+			"name": "Mode",
 			"decimals": 18
 		}
 	},
 	{
 		"id": 0,
-		"title": "Laika",
-		"logo": "/data/images/laika-logo.jpg",
+		"title": "B² Network",
+		"logo": "/data/images/airdrops/B²-Network-logo.jpg",
 		"start": "2024-02-15",
 		"end": "2024-03-15",
 		"amount": 20000,
 		"value": 20000,
 		"platform": 56,
-		"description": "Laika is the first community driven Solana meme SuperVerse, where they unite people across different Metaverses, Chains and Protocols to launch Laika to The Moon in a 3 stage space mission. Laika is more than just a memecoin. Laika is a movement. Laika is proof that if users band together as a global community, they can achieve the impossible. Laika is airdropping a total of $20,000 worth of LAIKA tokens to users who do simple Zealy quests. Join Zealy, complete Laika quests to earn XP, and stand a chance to be among the top 500 participants wo win up to $2,000 worth of LAIKA each. Step-by-Step Guide: Visit the Laika Zealy airdrop page. Connect your wallet and sign up. Now, complete the quests to earn XPs. The top 500 participants on the leaderboard will get rewards as mentioned below: 1st place: $2,000 LAIKA 2nd place: $1,500 LAIKA 3rd place: $1,000 LAIKA 4th and 5th place: $750 LAIKA each 6th to 10th place: $300 LAIKA each 11th to 50th place: $125 LAIKA each 51st to 100th place: $50 LAIKA each 101st to 200th place: $20 LAIKA each 201st to 500th place: $10 LAIKA each",
-		"claimURL": "https://zealy.io/cw/laikathecosmodog/questboard",
+		"description": "B² Network is a Layer-2 solution that bolsters transaction speed and broadens application diversity without sacrificing security. B² Network is the first zero-knowledge proof verification commitment rollup on Bitcoin. Leveraging rollup technology, B² Network provides a platform capable of running Turing-complete smart contracts for off-chain transactions, which enhances transaction efficiency and minimizes costs. B² Network, backed by HashKey Capital, OKX Ventures, KuCoin Ventures and many more, is airdropping 5% of the total supply to users who join the Buzz airdrop campaign. Sign up and deposit tokens to earn points in the form of parts. Also, earn more parts for each referral. Parts can be converted to built rigs, which can then be used to earn B² Network token.",
+		"claimURL": "https://buzz.bsquared.network/?code=IrsRO",
 		"asset": {
-			"symbol": "LAIKA",
-			"name": "Laika",
+			"symbol": "N/A",
+			"name": "N/A",
 			"decimals": 18
 		}
 	},
