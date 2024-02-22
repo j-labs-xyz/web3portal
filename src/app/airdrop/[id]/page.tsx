@@ -45,6 +45,13 @@ export default async function Page({ params }: {
 							<div>-</div>
 							<div>{new Date(airdrop.end).toLocaleDateString()}</div>
 						</div>
+
+						<p>&nbsp;</p>
+
+						<a
+							className="linkButton"
+							target="_blank"
+							href={airdrop.claimURL}>claim</a>
 					</div>
 
 					<article>{airdrop.description}</article>
