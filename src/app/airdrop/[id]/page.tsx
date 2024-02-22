@@ -4,35 +4,11 @@ import { AirDropData } from "@/libs/types";
 import { Footer } from "@/views/Footer";
 import TitleBar from "@/views/TitleBar";
 import Image from "next/image";
-import { redirect } from "next/navigation";
-import data from "../../../../public/data/data.json";
-import networks from "../../../../public/data/networks.json";
 
-function getData() {
-	// const res = await fetch("http://localhost:3000/data/data.json", {
-	//   cache: "no-cache"
-	//   // cache: "force-cache",
-	//   // next: { revalidate: 3600 }
-	// });
-
-	// const networks = await fetch("http://localhost:3000/data/networks.json", {
-	//   cache: "no-cache"
-	// });
-
-	// return {
-	//   airdrops: await res.json(),
-	//   networks: await networks.json()
-	// };
-	return {
-		airdrops: data,
-		networks: networks
-	};
-}
-
-export default function Page({ params }: {
+export default async function Page({ params }: {
 	params: { id: string };
 }) {
-	const data = getData();
+	const data = await appController.getData();
 	const airdrop: AirDropData | undefined = data.airdrops.find((item: AirDropData) => (item.id === parseInt(params.id)));
 
 	return <main className="main">
@@ -69,6 +45,13 @@ export default function Page({ params }: {
 							<div>-</div>
 							<div>{new Date(airdrop.end).toLocaleDateString()}</div>
 						</div>
+
+						<p>&nbsp;</p>
+
+						<a
+							className="linkButton"
+							target="_blank"
+							href={airdrop.claimURL}>claim</a>
 					</div>
 
 					<article>{airdrop.description}</article>

@@ -1,36 +1,12 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import TitleBar from "@/views/TitleBar";
 import { AirDropData, JsonObject } from "@/libs/types";
 import { AirdropItem } from "@/components/AirdropItem";
 import { Footer } from "@/views/Footer";
-import data from "../../public/data/data.json";
-import networks from "../../public/data/networks.json";
 import { appController } from "@/libs/appController";
 
-async function getData() {
-  // const res = await fetch("http://localhost:3000/data/data.json", {
-  //   cache: "no-cache"
-  //   // cache: "force-cache",
-  //   // next: { revalidate: 3600 }
-  // });
-
-  // const networks = await fetch("http://localhost:3000/data/networks.json", {
-  //   cache: "no-cache"
-  // });
-
-  // return {
-  //   airdrops: await res.json(),
-  //   networks: await networks.json()
-  // };
-  return {
-    airdrops: data,
-    networks: networks
-  };
-}
-
 export default async function Home() {
-  const data = await getData();
+  const data = await appController.getData();
 
   return (
     <main className="main">
