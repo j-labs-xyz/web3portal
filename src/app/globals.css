@@ -154,11 +154,6 @@ a {
   text-transform: capitalize;
 }
 
-.text-small {
-  font-size: 8pt;
-  text-transform: capitalize;
-}
-
 .sign {
   font-size: small;
   color: grey;

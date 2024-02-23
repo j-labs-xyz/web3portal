@@ -30,21 +30,23 @@ export default async function Page({ params }: {
 							src={airdrop.logo}
 							className="circleImage" />
 
-						<div className="flex-row-align-left">
-							<div className="label">token:</div>
-							<div>{airdrop.asset.symbol}</div>
-						</div>
+						{airdrop.asset && <>
+							<div className="flex-row-align-left">
+								<div className="label">token:</div>
+								<div>{airdrop.asset.symbol}</div>
+							</div>
 
-						<div className="flex-row-align-left">
-							<div className="label">amount:</div>
-							<div>{airdrop.amount}&nbsp;{airdrop.asset.symbol}(${airdrop.value})</div>
-						</div>
+							<div className="flex-row-align-left">
+								<div className="label">amount:</div>
+								<div>{airdrop.amount}&nbsp;{airdrop.asset.symbol}(${airdrop.value})</div>
+							</div>
+						</>}
 
-						<div className="flex-row-align-left">
+						{airdrop.start && airdrop.end && <div className="flex-row-align-left">
 							<div>{new Date(airdrop.start).toLocaleDateString()}</div>
 							<div>-</div>
 							<div>{new Date(airdrop.end).toLocaleDateString()}</div>
-						</div>
+						</div>}
 
 						<p>&nbsp;</p>
 
@@ -54,10 +56,13 @@ export default async function Page({ params }: {
 							href={airdrop.claimURL}>claim</a>
 					</div>
 
-					<article>{airdrop.description}</article>
+					<article dangerouslySetInnerHTML={{ __html: airdrop.description }} />
 				</div>
 			</>}
 		</div>
+
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
 
 		<Footer />
 	</main>

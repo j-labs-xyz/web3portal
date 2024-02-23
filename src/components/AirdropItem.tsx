@@ -32,31 +32,42 @@ export const AirdropItem = ({ airdrop, networks }: {
 					<div className="flex-row-align-left-baseline">
 						<h3>{airdrop.title}</h3>
 
-						<span>({airdrop.asset.symbol})</span>
+						{airdrop.asset && <span>({airdrop.asset.symbol})</span>}
 					</div>
 
-					<Image
-						width={16}
-						height={16}
-						alt="network logo"
-						src={(networks as JsonObject)[String(airdrop.platform)].logo} />
+					{/* 推荐标志 */}
 				</div>
 
-				<div className="flex-row-align-left text-small">
+				{airdrop.platform && <div className="flex-row-align-left">
+					<div className="label">platform:&nbsp;{(networks as JsonObject)[String(airdrop.platform)].name}</div>
+
+					<Image
+						width={0}
+						height={0}
+						sizes="12px"
+						style={{
+							height: '12px',
+							width: 'auto'
+						}}
+						alt="network logo"
+						src={(networks as JsonObject)[String(airdrop.platform)].logo} />
+				</div>}
+
+				{airdrop.start && airdrop.end && <div className="flex-row-align-left">
 					<div>{new Date(airdrop.start).toLocaleDateString()}</div>
 					<div>-</div>
 					<div>{new Date(airdrop.end).toLocaleDateString()}</div>
-				</div>
+				</div>}
 
-				<div className="flex-row-align-left text-small">
-					<div>token:</div>
+				{airdrop.amount && <div className="flex-row-align-left">
+					<div className="label">token:</div>
 					<div>{airdrop.amount}</div>
-				</div>
+				</div>}
 
-				<div className="flex-row-align-left text-small">
-					<div>value:</div>
+				{airdrop.value && <div className="flex-row-align-left">
+					<div className="label">value:</div>
 					<div>${airdrop.value}</div>
-				</div>
+				</div>}
 			</div>
 		</div>
 	</div>
