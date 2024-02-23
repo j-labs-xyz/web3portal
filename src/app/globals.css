@@ -79,7 +79,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  margin: 60px;
   color: white;
 }
 
@@ -180,6 +179,7 @@ a {
   position: relative;
   min-height: 100vh;
   width: 100%;
+  padding: 3rem 2rem;
 }
 
 .mainView {
@@ -250,13 +250,13 @@ article {
 /* Mobile */
 @media (max-width: 700px) {
   .main {
-    padding: 0;
+    padding: 1rem;
     padding-bottom: 10rem;
   }
 
   .mainView {
-    padding: 0 1rem;
-    width: calc(100% - 2rem);
+    padding: 0;
+    width: 100%;
   }
 
   .grid-3-Columns {
