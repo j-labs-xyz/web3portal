@@ -1,8 +1,24 @@
 {
+	"1": {
+		"name": "Ethereum",
+		"logo": "https://ethereum.org/_next/static/media/eth-diamond-rainbow.bb509e8a.png"
+	},
+	"sui": {
+		"name": "Sui",
+		"logo": "https://assets-global.website-files.com/6425f546844727ce5fb9e5ab/659d970f061dbfe7ca0e47c0_emblem-sui-w.svg"
+	},
+	"5000": {
+		"name": "Mantle",
+		"logo": "https://www.mantle.xyz/_next/image?url=%2Flogo-mantle-minimal.png&w=128&q=75"
+	},
+	"2222": {
+		"name": "Kava",
+		"logo": "https://assets-global.website-files.com/61e9c71623b1f0311abcbbbc/6226336a8447b54da43b4423_Kava-Logomark.svg"
+	},
 	"56": {
 		"name": "BNB Smart Chain",
 		"rpc": "https://bsc-dataseed1.defibit.io",
-		"logo": "/data/images/bnb.png",
+		"logo": "https://bscscan.com/assets/bsc/images/svg/brandassets/logo-symbol-light.svg",
 		"explorer": "https://bscscan.com",
 		"currency": {
 			"symbol": "BNB",
