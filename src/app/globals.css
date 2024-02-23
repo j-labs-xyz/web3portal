@@ -98,7 +98,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: normal;
   gap: 0.5rem;
 }
 
@@ -222,8 +222,8 @@ article {
 .linkButton {
   padding: 1rem 2rem;
   border-radius: 10px;
-  border: 1px solid #042c2d;
-  box-shadow: 3px 3px 0 0 #042c2d;
+  border: 1px solid #01e3c9;
+  box-shadow: 3px 3px 0 0 #01e3c9;
   /* background-color: white; */
   color: white;
   text-transform: capitalize;
@@ -231,7 +231,7 @@ article {
 }
 
 .linkButton:hover {
-  box-shadow: 1px 1px 0 0 #042c2d;
+  box-shadow: 1px 1px 0 0 #01e3c9;
 }
 
 /* @media (prefers-color-scheme: dark) {

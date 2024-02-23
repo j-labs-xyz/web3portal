@@ -3,6 +3,10 @@
 		"name": "Ethereum",
 		"logo": "https://ethereum.org/_next/static/media/eth-diamond-rainbow.bb509e8a.png"
 	},
+	"btc": {
+		"name": "Bitcoin",
+		"logo": "https://bitcoin.design/assets/images/guide/getting-started/visual-language/bitboy-2011@2x.png"
+	},
 	"sui": {
 		"name": "Sui",
 		"logo": "https://assets-global.website-files.com/6425f546844727ce5fb9e5ab/659d970f061dbfe7ca0e47c0_emblem-sui-w.svg"
