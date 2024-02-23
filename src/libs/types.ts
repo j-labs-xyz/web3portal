@@ -18,4 +18,5 @@ export type AirDropData = {
 	description: string;
 	claimURL: string;
 	asset: Coin;
+	featured?: boolean;
 }

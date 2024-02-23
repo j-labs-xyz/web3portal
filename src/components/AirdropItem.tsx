@@ -4,6 +4,7 @@ import { AirDropData, JsonObject } from "@/libs/types";
 import styles from "./AirdropItem.module.css";
 import Image from "next/image";
 import React from "react";
+import { formatCurrency, formatTokenAmount } from "@/libs/utils";
 
 export const AirdropItem = ({ airdrop, networks }: {
 	airdrop: AirDropData;
@@ -30,12 +31,12 @@ export const AirdropItem = ({ airdrop, networks }: {
 				style={{ width: "100%" }}>
 				<div className="flex-row-space-between">
 					<div className="flex-row-align-left-baseline">
-						<h3>{airdrop.title}</h3>
+						<h1>{airdrop.title}</h1>
 
 						{airdrop.asset && <span>({airdrop.asset.symbol})</span>}
 					</div>
 
-					{/* 推荐标志 */}
+					{airdrop.featured && <div style={{ fontSize: "xx-larger" }}>✰</div>}
 				</div>
 
 				{airdrop.platform && <div className="flex-row-align-left">
@@ -61,12 +62,12 @@ export const AirdropItem = ({ airdrop, networks }: {
 
 				{airdrop.amount && <div className="flex-row-align-left">
 					<div className="label">token:</div>
-					<div>{airdrop.amount}</div>
+					<div>{formatTokenAmount(airdrop.amount)}</div>
 				</div>}
 
 				{airdrop.value && <div className="flex-row-align-left">
 					<div className="label">value:</div>
-					<div>${airdrop.value}</div>
+					<div>{formatCurrency(airdrop.value)}</div>
 				</div>}
 			</div>
 		</div>
