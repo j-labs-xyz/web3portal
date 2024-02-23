@@ -18,7 +18,7 @@ export default async function Page({ params }: {
 			<TextButton text="< back" />
 
 			{airdrop && <>
-				<h2>{airdrop.title}</h2>
+				<h1>{airdrop.title}</h1>
 
 				<div
 					className="articleView">

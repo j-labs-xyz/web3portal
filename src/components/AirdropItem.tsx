@@ -36,7 +36,7 @@ export const AirdropItem = ({ airdrop, networks }: {
 						{airdrop.asset && <span>({airdrop.asset.symbol})</span>}
 					</div>
 
-					{airdrop.featured && <div style={{ fontSize: "xx-larger" }}>✰</div>}
+					{airdrop.featured && <div style={{ fontSize: "6pt", alignItems: "top" }}>Recommended</div>}
 				</div>
 
 				{airdrop.platform && <div className="flex-row-align-left">

@@ -8,7 +8,7 @@
 }
 
 .AirdropItemLayout {
-	border: 1px solid #042c2d;
+	border: 1px solid #01e3c9;
 	border-radius: 10px;
 	flex: 1 1;
 	display: flex;
@@ -16,10 +16,10 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	cursor: pointer;
-	gap: 1rem;
+	gap: 2rem;
 	padding: 1rem;
 	transition: all 0.5s;
-	box-shadow: 3px 3px 0 0 #042c2d;
+	box-shadow: 3px 3px 0 0 #01e3c9;
 	font-size: smaller;
 	/* position: absolute;
 	top: 0;
@@ -29,7 +29,7 @@
 }
 
 .AirdropItemLayout:hover {
-	box-shadow: 1px 1px 0 0 #042c2d;
+	box-shadow: 1px 1px 0 0 #01e3c9;
 	/* top: 2px;
 	left: 2px; */
 }
