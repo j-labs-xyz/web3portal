@@ -10,7 +10,7 @@ export default function TitleBar() {
 
 	return <div className={styles.titleBarLayout}>
 		<Link
-			href="/"
+			href="https://www.prodigitalfund.com/"
 			className="flex-row-align-center">
 			<Image
 				src="/images/logo.webp"

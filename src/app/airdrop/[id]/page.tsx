@@ -20,7 +20,7 @@ export default async function Page({ params }: {
 			<TextButton text="< back" />
 
 			{airdrop && <>
-				<h1>{airdrop.title}</h1>
+				<h1 style={{ textAlign: "center" }}>{airdrop.title}</h1>
 
 				<div
 					className="articleView">
@@ -60,7 +60,11 @@ export default async function Page({ params }: {
 						<a
 							className="linkButton"
 							target="_blank"
-							href={airdrop.claimURL}>claim</a>
+							href={airdrop.claimURL}
+							style={{
+								width: "calc(100% - 4rem)",
+								textAlign: "center"
+							}}>claim</a>
 					</div>
 
 					<article dangerouslySetInnerHTML={{ __html: airdrop.description }} />
